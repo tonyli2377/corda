@@ -3,7 +3,7 @@ Release notes
 
 Here are brief summaries of what's changed between each snapshot release.
 
-Milestone 8
+Milestone 9
 -----------
 
 * API:
@@ -14,6 +14,7 @@ Milestone 8
       a valid transaction with that hash has been received, committed and processed by the vault. This is useful
       in multi-party flows where one side takes responsibility for sending the finished transaction to the notary,
       and the other side wishes to wait for it.
+    * Pseudonymous ``AnonymousParty`` class added as a superclass of ``Party``.
 
 Milestone 7
 -----------
