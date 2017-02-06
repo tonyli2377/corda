@@ -8,13 +8,19 @@ Milestone 9
 
 * API:
 
+    * Pseudonymous ``AnonymousParty`` class added as a superclass of ``Party``.
+
+Milestone 8
+-----------
+
+* API:
+
     * ``Party`` equality is now based on the owning key, rather than the owning key and name. This is important for
       party anonymisation to work, as each key must identify exactly one party.
     * A new ``waitForLedgerCommit`` method is available inside flows. Given a hash it will suspend the flow until
       a valid transaction with that hash has been received, committed and processed by the vault. This is useful
       in multi-party flows where one side takes responsibility for sending the finished transaction to the notary,
       and the other side wishes to wait for it.
-    * Pseudonymous ``AnonymousParty`` class added as a superclass of ``Party``.
 
 Milestone 7
 -----------
